@@ -1,0 +1,2 @@
+rootProject.name='KuVN'
+include ':app'

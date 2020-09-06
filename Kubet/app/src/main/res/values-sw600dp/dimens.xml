@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cal_horizontal_margin">60dp</dimen>
+
+    <dimen name="interest_graph_size">380dp</dimen>
+    <dimen name="interest_result_horizontal_margin">50dp</dimen>
+
+    <dimen name="game_item_height">500dp</dimen>
+    <dimen name="game_item_margin">100dp</dimen>
+    <dimen name="game_item_space">55dp</dimen>
+    <dimen name="game_item_title_top_margin">30dp</dimen>
+    <dimen name="game_btn_play_horizontal_margin">100dp</dimen>
+
+    <dimen name="support_button_horizontal_padding">40dp</dimen>
+
+    <dimen name="text_size_home_game">26sp</dimen>
+
+    <dimen name="blog_title_vertical_padding">12dp</dimen>
+    <dimen name="blog_title_horizontal_padding">14dp</dimen>
+    <dimen name="blog_title_text_size">22sp</dimen>
+</resources>

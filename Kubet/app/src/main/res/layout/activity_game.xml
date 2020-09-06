@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_core" />
+
+    <include
+        android:id="@+id/default_top_bar"
+        layout="@layout/layout_top_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_bar_height">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_game"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/game_item_height"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_game_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/game_item_title_top_margin"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_play"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="@dimen/game_btn_play_horizontal_margin"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="@dimen/game_btn_play_horizontal_margin"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_accent_rounded"
+                android:text="Play Game"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_error"
+            layout="@layout/layout_error" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_main"
+        android:title="@string/bottom_main"/>
+
+    <item
+        android:id="@+id/gift"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_gift"
+        android:title="@string/bottom_gift"/>
+
+    <item
+        android:id="@+id/calculation"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_calculation"
+        android:title="@string/bottom_calculation"/>
+
+    <item
+        android:id="@+id/support"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_support"
+        android:title="@string/bottom_support"/>
+</menu>
